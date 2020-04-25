@@ -1,0 +1,16 @@
+Andrew Johnson
+Joseph Turner
+Calculus Calculator
+The Problem: As calculus students, we know how tedious math can be at times.We wanted to create a program to calculate our calculus problems faster and more efficiently. Longer polynomial functions are difficult to deal with; derivatives, antiderivatives, and definite integrals can leave room for mistakes to be made. We want to create a program that is simple and easy to use that can help streamline calculus functions.
+
+The UI: The problem can be solved using a calculator program. We decided to go for the typical calculator UI to ensure that the program was simple and easy to use. A traditional calculator meets all requirements and can be easily understood; most people will be familiar with the layout. The calculator consists of a clear button, the number-pad, the 4 basic operators as well as a power function, the equals button, and the “Next” button. Because the functions are entered in a restricted format, users click the “Next” button to cycle to the next coefficient to be entered when entering a function. 
+
+Issues: Prior to starting the code, we knew that input would pose problems due to the need to recognize take input as a string and parse out the numbers and operations. Variable entry caused issues, which led to the use of a more restrictive UI. Programming the order of operations proved to be a challenge because we failed to keep track of which operations applied to which numbers.
+
+Solutions; For the input issues, we decided to take input after the user selects a function, then it would create an outline for the user to fill in the function with their desired values. The user cycles through the coefficients, entering double values for each. Although this format restricts the user to 5th degree polynomials, the structure helped handle input. For order of operations, we used ArrayLists of numbers and operation and removed the operation and numbers from their position in the ArrayLists; the numbers are replaced by the result of the operation. We created a handleInput() function that takes in the input from the user to decide how to handle the user’s input. We created an Operations class which has static methods integrate(), antiderivative(), derivative(), and solve(), corresponding to the functions on the calculator.
+
+What we would do differently: Although the functions implemented into the calculator work properly, we wish that we would have been able to add more functions to the calculator. The original design for our calculator was going to include unit conversions, parentheses, and trigonometric functions. The user has very limited control in the finished version of the calculator, which is something we would have liked to improve upon. The structure is great for handling input, but we would want the calculator to be more user-friendly. 
+
+
+
+
